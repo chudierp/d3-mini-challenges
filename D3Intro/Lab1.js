@@ -48,7 +48,12 @@ d3.json('../data/sales.json')
       .enter()
       .append('div')
       // set the text for each div
+      .text(d => d.conference_name)
       // add a style for each div
+      .style('background-color', '#FFA52C')
+      .style('color', '#0000F9')
+      .style('padding', '1em')
+      .style('margin', '1px')
   })
 
 
